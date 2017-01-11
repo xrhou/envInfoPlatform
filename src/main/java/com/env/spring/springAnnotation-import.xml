@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+     <!-- ConstructRunSituation -->
+	<bean id="constructRunSituationDao" class="com.env.dao.impl.ConstructRunSituationDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="constructRunSituationService" class="com.env.service.impl.ConstructRunSituationManager">
+		<property name="constructRunSituationDao" ref="constructRunSituationDao"></property>
+	</bean>
+	<bean id="constructRunSituationManager" parent="transactionBase">
+		<property name="target" ref="constructRunSituationService"></property>
+	</bean>
+    
+	<!-- EmergencyPlan -->
+	<bean id="emergencyPlanDao" class="com.env.dao.impl.EmergencyPlanDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="emergencyPlanService" class="com.env.service.impl.EmergencyPlanManager">
+		<property name="emergencyPlanDao" ref="emergencyPlanDao"></property>
+	</bean>
+	<bean id="emergencyPlanManager" parent="transactionBase">
+		<property name="target" ref="emergencyPlanService"></property>
+	</bean>
+	
+	<!-- EntControlType -->
+	<bean id="entControlTypeDao" class="com.env.dao.impl.EntControlTypeDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="entControlTypeService" class="com.env.service.impl.EntControlTypeManager">
+		<property name="entControlTypeDao" ref="entControlTypeDao"></property>
+	</bean>
+	<bean id="entControlTypeManager" parent="transactionBase">
+		<property name="target" ref="entControlTypeService"></property>
+	</bean>
+	
+	<!-- EntMonitorPlan -->
+	<bean id="entMonitorPlanDao" class="com.env.dao.impl.EntMonitorPlanDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="entMonitorPlanService" class="com.env.service.impl.EntMonitorPlanManager">
+		<property name="entMonitorPlanDao" ref="entMonitorPlanDao"></property>
+	</bean>
+	<bean id="entMonitorPlanManager" parent="transactionBase">
+		<property name="target" ref="entMonitorPlanService"></property>
+	</bean>
+	
+	<!-- EntMonitorReport -->
+	<bean id="entMonitorReportDao" class="com.env.dao.impl.EntMonitorReportDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="entMonitorReportService" class="com.env.service.impl.EntMonitorReportManager">
+		<property name="entMonitorReportDao" ref="entMonitorReportDao"></property>
+	</bean>
+	<bean id="entMonitorReportManager" parent="transactionBase">
+		<property name="target" ref="entMonitorReportService"></property>
+	</bean>
+	
+	<!-- EntPollutionInfo -->
+	<bean id="entPollutionInfoDao" class="com.env.dao.impl.EntPollutionInfoDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="entPollutionInfoService" class="com.env.service.impl.EntPollutionInfoManager">
+		<property name="entPollutionInfoDao" ref="entPollutionInfoDao"></property>
+	</bean>
+	<bean id="entPollutionInfoManager" parent="transactionBase">
+		<property name="target" ref="entPollutionInfoService"></property>
+	</bean>
+	
+	<!-- EntpriseManager -->
+	<bean id="entpriseDao" class="com.env.dao.impl.EntpriseDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="entpriseService" class="com.env.service.impl.EntpriseManager">
+		<property name="entpriseDao" ref="entpriseDao"></property>
+	</bean>
+	<bean id="entpriseManager" parent="transactionBase">
+		<property name="target" ref="entpriseService"></property>
+	</bean>
+	
+	<!-- entProductManager -->
+	<bean id="entProductDao" class="com.env.dao.impl.EntProductDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="entProductService" class="com.env.service.impl.EntProductManager">
+		<property name="entProductDao" ref="entProductDao"></property>
+	</bean>
+	<bean id="entProductManager" parent="transactionBase">
+		<property name="target" ref="entProductService"></property>
+	</bean>
+	
+	<!-- EntType -->
+	<bean id="entTypeDao" class="com.env.dao.impl.EntTypeDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="entTypeService" class="com.env.service.impl.EntTypeManager">
+		<property name="entTypeDao" ref="entTypeDao"></property>
+	</bean>
+	<bean id="entTypeManager" parent="transactionBase">
+		<property name="target" ref="entTypeService"></property>
+	</bean>
+   
+	<!-- EntUser -->
+	<bean id="entUserDao" class="com.env.dao.impl.EntUserDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="entUserService" class="com.env.service.impl.EntUserManager">
+		<property name="entUserDao" ref="entUserDao"></property>
+	</bean>
+	<bean id="entUserManager" parent="transactionBase">
+		<property name="target" ref="entUserService"></property>
+	</bean>
+	
+	<!-- EntYearMonitorReportManager-->
+	<bean id="entYearMonitorReportDao" class="com.env.dao.impl.EntYearMonitorReportDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="entYearMonitorReportService" class="com.env.service.impl.EntYearMonitorReportManager">
+		<property name="entYearMonitorReportDao" ref="entYearMonitorReportDao"></property>
+	</bean>
+	<bean id="entYearMonitorReportManager" parent="transactionBase">
+		<property name="target" ref="entYearMonitorReportService"></property>
+	</bean>
+	
+	<!-- NoiseInfo-->
+	<bean id="noiseInfoDao" class="com.env.dao.impl.NoiseInfoDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="noiseInfoService" class="com.env.service.impl.NoiseInfoManager">
+		<property name="noiseInfoDao" ref="noiseInfoDao"></property>
+	</bean>
+	<bean id="noiseInfoManager" parent="transactionBase">
+		<property name="target" ref="noiseInfoService"></property>
+	</bean>
+	
+	<!-- operationLogManager -->
+	<bean id="operationLogDao" class="com.env.dao.impl.OperationLogDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="operationLogService" class="com.env.service.impl.OperationLogManager">
+		<property name="operationLogDao" ref="operationLogDao"></property>
+	</bean>
+	<bean id="operationLogManager" parent="transactionBase">
+		<property name="target" ref="operationLogService"></property>
+	</bean>
+	
+	<!-- OtherPublicInfo -->
+	<bean id="otherPublicInfoDao" class="com.env.dao.impl.OtherPublicInfoDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="otherPublicInfoService" class="com.env.service.impl.OtherPublicInfoManager">
+		<property name="otherPublicInfoDao" ref="otherPublicInfoDao"></property>
+	</bean>
+	<bean id="otherPublicInfoManager" parent="transactionBase">
+		<property name="target" ref="otherPublicInfoService"></property>
+	</bean>
+	
+	<!-- effectAppraiseAndLicense -->
+	<bean id="effectAppraiseAndLicenseDao" class="com.env.dao.impl.EffectAppraiseAndLicenseDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="effectAppraiseAndLicenseService" class="com.env.service.impl.EffectAppraiseAndLicenseManager">
+		<property name="effectAppraiseAndLicenseDao" ref="effectAppraiseAndLicenseDao"></property>
+	</bean>
+	<bean id="effectAppraiseAndLicenseManager" parent="transactionBase">
+		<property name="target" ref="effectAppraiseAndLicenseService"></property>
+	</bean>
+	
+	<!-- SolidWaste -->
+	<bean id="solidWasteDao" class="com.env.dao.impl.SolidWasteDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="solidWasteService" class="com.env.service.impl.SolidWasteManager">
+		<property name="solidWasteDao" ref="solidWasteDao"></property>
+	</bean>
+	<bean id="solidWasteManager" parent="transactionBase">
+		<property name="target" ref="solidWasteService"></property>
+	</bean>
+
+	
+</beans>

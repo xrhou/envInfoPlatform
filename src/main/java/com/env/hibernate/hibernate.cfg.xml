@@ -1,0 +1,26 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <mapping class="com.env.entity.ConstructRunSituation"/>
+        <mapping class="com.env.entity.EffectAppraiseAndLicense"/>
+        <mapping class="com.env.entity.EmergencyPlan"/>
+        <mapping class="com.env.entity.EntControlType"/>
+        <mapping class="com.env.entity.EntMonitorPlan"/>
+        <mapping class="com.env.entity.EntMonitorReport"/>
+        <mapping class="com.env.entity.EntPollutionInfo"/>
+        <mapping class="com.env.entity.Entprise"/>
+        <mapping class="com.env.entity.EntProduct"/>
+        <mapping class="com.env.entity.EntType"/>
+        <mapping class="com.env.entity.EntUser"/>
+        <mapping class="com.env.entity.EntYearMonitorReport"/>
+        <mapping class="com.env.entity.EntZone"/>
+        <mapping class="com.env.entity.NoiseInfo"/>
+        <mapping class="com.env.entity.OperationLog"/>
+        <mapping class="com.env.entity.OtherPublicInfo"/>
+        <mapping class="com.env.entity.SolidWaste"/>
+    </session-factory>
+
+</hibernate-configuration>
