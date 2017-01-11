@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+.contenttitle{ width:100%; height:75px; text-align: center; font-weight:bold; line-height:75px; font-size:15px;}
+.contentcontent{ width:716px;; height:870px; line-height:40px; padding-left:20px; padding-right:20px; text-align: justify；}
+.contentcontent img{ margin:20px 50px;}
+
+.lb{ width:716px;; height:590px; line-height:0px;text-align: justify;}
+.lb img{ margin:36px 20px; float: left;}
+.lb a{ color:#3083d6;}
+.lb a:hover img { border:2px #9ec5ec solid;}
+.imagesright{ width:540px; height:78px; margin:36px 0px; float: left;}
+.lb ul{ width:500px; height:26px; margin:20px auto;}
+.lb ul li { float:left; width:70px; height:26px; line-height:26px; text-align:center; border:1px #d7d7d7 solid; margin-left:5px;}
+.lb ul a li { color:#1d3c8f;}
+.lb ul a:hover li{background-color:#f4f4f4;}
+
+
+ .select3{ height:20px; width:65px;  border:#FFF 1px dashed;}
