@@ -15,7 +15,7 @@ body {
 	background-image: url(images/bjZL.jpg);
 }
 </style>
-<!--bnner js-->
+<!--banner js-->
 <script src="${bathPath}js/jquery-1.9.1.min.js" type="text/javascript"></script>
 <script src="${bathPath}js/jquery.nav.js" type="text/javascript"></script>
 <script src="${bathPath}js/framework.js" type="text/javascript" ></script>
